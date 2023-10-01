@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="IMG/png" href="FavIcon.png">
+        <title>Portafolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><!--Conectar Fuentes-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--Conectar Fuentes-->
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap" rel="stylesheet"><!--Conectar Fuentes-->
+        <link rel="stylesheet" href="CSS/styles.css"><!--Estilos CSS-->
+        <link rel="stylesheet" href="CSS/responsive.css"><!--Estilos CSS responsive-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--CDN "AOS" .CSS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!--CDN "AOS" .JS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"><!--CDN Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"><!--CDN Bootstrap CSS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script><!--CDN Bootstrap JS-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script><!--CDN "SweetAlert2"-->
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script><!--CDN "LottieFiles"-->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> <!--CDN JQuery-->
+    </head>
+    <body>
+        <div class="container-fluid p-0">
+            <!--Header-->
+            <header id="header-p">
+                <div class="row">
+                    <!--Logo-->
+                    <div id="box-logo" class="col-12 col-lg-2 px-0"></div>
+                    <!--Nav-->
+                    <nav class="col-12 col-lg-10 nav-p px-0">
+                        <ul class="nav-lista-secciones d-flex flex-row align-items-center float-end m-0 p-0 h-100">
+                            <li class="item-seccion w-25 text-center"><a href="#" class="">Skills</a></li>
+                            <li class="item-seccion w-25 text-center"><a href="#proyectos" class="">Proyectos</a></li>
+                            <li class="item-seccion w-25 text-center"><a href="#experiencia">Experiencia</a></li>
+                            <li class="item-seccion w-25 text-center mx-0"><a href="#contactos" class="">Contactos</a></li>
+                        </ul>
+                    </nav>
+                </div>      
+            </header>
+            <!--Main-->
+            <main>
+                <!--Sección skills-->
+                <section class="seccion seccion-skills">
+                    <div class="row seccion-inicio" style="height: 70%;">
+                        <div class="col-12 d-flex flex-md-row flex-column-reverse px-0">
+                            <!--Contenedor Textos-->
+                            <div class="col-12 col-md-6 col-lg-8 h-auto d-flex flex-column justify-content-md-center p-0 text-light text-center text-md-start align-items-center align-items-md-start">
+                                <h1 class="fw-bold mt-5 mt-md-0">Ferdy Andrés Marulanda Carvajal</h1>
+                                <small class="d-block descripcion fw-semibold">Desarrollador y diseñador web, Medellin Co.</small>
+                                <p class="my-4 parrafo">Soy un Tecnólogo en Diseño y Desarrollo Web apasionado por los retos<br>
+                                    y la busqueda de nuevos conocimientos. Me considero una persona<br>
+                                    creativa, curiosa y siempre en busca de soluciones innovadoras.
+                                </p>
+                                <button class="btn-purple my-3 my-md-0">Leer más</button>
+                            </div>
+                            <!--Contenedor IMG-->
+                            <div class="col-12 col-md-6 col-lg-4 h-auto d-flex justify-content-center justify-content-md-end align-items-center p-0">
+                                <div class="position-relative">
+                                    <img src="IMG/pp.png" alt="Perfil" id="img-perfil">
+                                    <div class="position-absolute imagen-label d-flex align-items-center px-3">
+                                        <div class="rounded-circle circulo-disponibilidad position-relative" style="height: 15px;width: 15px;"></div>
+                                        <p class="text-secondary m-0 ms-3">Disponible</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Contenedor Carrusel-->
+                    <div class="row " style="height: 30%">
+                        <div class="col-12 h-50 slider-tenologias mt-5 mt-lg-0">
+                            <ul class="lista-skills d-flex flex-row justify-content-between m-0 p-0">
+                                <li class="item-skill"><a href="https://www.figma.com/"  target="_blank"
+                                    data-bs-toggle="popover" data-bs-placement="top"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-custom-class="PopYellow"
+                                    data-bs-title="Figma"
+                                    data-bs-content="Diseño web prototipado"><img src="IMG/1.png" alt="" class="img-skill"></a></li>
+                                <li class="item-skill"><a href="https://html.spec.whatwg.org/multipage/"  target="_blank"                         
+                                    data-bs-toggle="popover" data-bs-placement="top"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-custom-class="PopRed"
+                                    data-bs-title="HTML"
+                                    data-bs-content="Desarrollo web front-end"><img src="IMG/2.png" alt="" class="img-skill"></a></li>
+                                <li class="item-skill"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"  target="_blank"
+                                    data-bs-toggle="popover" data-bs-placement="top"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-custom-class="PopRed"
+                                    data-bs-title="CSS"
+                                    data-bs-content="Desarrollo web front-end"><img src="IMG/3.png" alt="" class="img-skill"></a></li>
+                                    <li class="item-skill"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"  target="_blank"
+                                    data-bs-toggle="popover" data-bs-placement="top"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-custom-class="PopRed"
+                                    data-bs-title="Javascript"
+                                    data-bs-content="Desarrollo web front-end"><img src="IMG/4.png" alt="" class="img-skill"></a></li>
+                                <li class="item-skill"><a href="https://sass-lang.com/"  target="_blank"
+                                    data-bs-toggle="popover" data-bs-placement="top"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-custom-class="PopRed"
+                                    data-bs-title="Sass"
+                                    data-bs-content="Desarrollo web front-end"><img src="IMG/5.png" alt="" class="img-skill"></a></li>
+                                <li class="item-skill"><a href="https://getbootstrap.com/"  target="_blank"
+                                    data-bs-toggle="popover" data-bs-placement="top"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-custom-class="PopRed"
+                                    data-bs-title="Botstrap"
+                                    data-bs-content="Desarrollo web front-end"><img src="IMG/6.png" alt="" class="img-skill"></a></li>
+                                <li class="item-skill"><a href="https://jquery.com/"  target="_blank"
+                                    data-bs-toggle="popover" data-bs-placement="top"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-custom-class="PopRed"
+                                    data-bs-title="JQuery"
+                                    data-bs-content="Desarrollo web front-end"><img src="IMG/7.png" alt="" class="img-skill"></a></li>
+                                <li class="item-skill"><a href="https://www.php.net/manual/es/intro-whatis.php"  target="_blank"
+                                    data-bs-toggle="popover" data-bs-placement="top"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-custom-class="PopRed"
+                                    data-bs-title="PHP"
+                                    data-bs-content="Desarrollo web back-end"><img src="IMG/8.png" alt="" class="img-skill"></a></li>
+                                <li class="item-skill"><a href="https://dotnet.microsoft.com/es-es/languages/csharp"  target="_blank"
+                                    data-bs-toggle="popover" data-bs-placement="top"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-custom-class="PopRed"
+                                    data-bs-title="C#"
+                                    data-bs-content="Desarrollo web back-end"><img src="IMG/9.png" alt="" class="img-skill"></a></li>
+                                <li class="item-skill"><a href="https://dotnet.microsoft.com/es-es/apps/aspnet/web-apps/blazor"  target="_blank"
+                                    data-bs-toggle="popover" data-bs-placement="top"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-custom-class="PopRed"
+                                    data-bs-title="Blazor .net"
+                                    data-bs-content="Desarrollo web full-stack"><img src="IMG/10.png" alt="" class="img-skill"></a></li>
+                                <li class="item-skill"><a href="https://www.microsoft.com/en-us/sql-server/sql-server-2022"  target="_blank"
+                                    data-bs-toggle="popover" data-bs-placement="top"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-custom-class="PopRed"
+                                    data-bs-title="SQL Server"
+                                    data-bs-content="Desarrollo web back-end"><img src="IMG/11.png" alt="" class="img-skill"></a></li>
+                                <li class="item-skill"><a href="https://asana.com/es"  target="_blank"
+                                    data-bs-toggle="popover" data-bs-placement="top"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-custom-class="PopGreen"
+                                    data-bs-title="Asana"
+                                    data-bs-content="Planificación de proyectos"><img src="IMG/12.png" alt="" class="img-skill"></a></li>
+                                <li class="item-skill"><a href="https://github.com/"  target="_blank"
+                                    data-bs-toggle="popover" data-bs-placement="top"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-custom-class="PopRed"
+                                    data-bs-title="GitHub"
+                                    data-bs-content="Desarrollo web - Control de versiones"><img src="IMG/13.png" alt="" class="img-skill"></a></li>
+                                    <!--Segunda-Lista-->
+                                    <li class="item-skill"><a href="https://www.figma.com/"  target="_blank"
+                                        data-bs-toggle="popover" data-bs-placement="top"
+                                        data-bs-trigger="hover focus"
+                                        data-bs-custom-class="PopYellow"
+                                        data-bs-title="Figma"
+                                        data-bs-content="Diseño web prototipado"><img src="IMG/1.png" alt="" class="img-skill"></a></li>
+                                    <li class="item-skill"><a href="https://html.spec.whatwg.org/multipage/"  target="_blank"                         
+                                        data-bs-toggle="popover" data-bs-placement="top"
+                                        data-bs-trigger="hover focus"
+                                        data-bs-custom-class="PopRed"
+                                        data-bs-title="HTML"
+                                        data-bs-content="Desarrollo web front-end"><img src="IMG/2.png" alt="" class="img-skill"></a></li>
+                                    <li class="item-skill"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"  target="_blank"
+                                        data-bs-toggle="popover" data-bs-placement="top"
+                                        data-bs-trigger="hover focus"
+                                        data-bs-custom-class="PopRed"
+                                        data-bs-title="CSS"
+                                        data-bs-content="Desarrollo web front-end"><img src="IMG/3.png" alt="" class="img-skill"></a></li>
+                                        <li class="item-skill"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"  target="_blank"
+                                        data-bs-toggle="popover" data-bs-placement="top"
+                                        data-bs-trigger="hover focus"
+                                        data-bs-custom-class="PopRed"
+                                        data-bs-title="Javascript"
+                                        data-bs-content="Desarrollo web front-end"><img src="IMG/4.png" alt="" class="img-skill"></a></li>
+                                    <li class="item-skill"><a href="https://sass-lang.com/"  target="_blank"
+                                        data-bs-toggle="popover" data-bs-placement="top"
+                                        data-bs-trigger="hover focus"
+                                        data-bs-custom-class="PopRed"
+                                        data-bs-title="Sass"
+                                        data-bs-content="Desarrollo web front-end"><img src="IMG/5.png" alt="" class="img-skill"></a></li>
+                                    <li class="item-skill"><a href="https://getbootstrap.com/"  target="_blank"
+                                        data-bs-toggle="popover" data-bs-placement="top"
+                                        data-bs-trigger="hover focus"
+                                        data-bs-custom-class="PopRed"
+                                        data-bs-title="Botstrap"
+                                        data-bs-content="Desarrollo web front-end"><img src="IMG/6.png" alt="" class="img-skill"></a></li>
+                                    <li class="item-skill"><a href="https://jquery.com/"  target="_blank"
+                                        data-bs-toggle="popover" data-bs-placement="top"
+                                        data-bs-trigger="hover focus"
+                                        data-bs-custom-class="PopRed"
+                                        data-bs-title="JQuery"
+                                        data-bs-content="Desarrollo web front-end"><img src="IMG/7.png" alt="" class="img-skill"></a></li>
+                                    <li class="item-skill"><a href="https://www.php.net/manual/es/intro-whatis.php"  target="_blank"
+                                        data-bs-toggle="popover" data-bs-placement="top"
+                                        data-bs-trigger="hover focus"
+                                        data-bs-custom-class="PopRed"
+                                        data-bs-title="PHP"
+                                        data-bs-content="Desarrollo web back-end"><img src="IMG/8.png" alt="" class="img-skill"></a></li>
+                                    <li class="item-skill"><a href="https://dotnet.microsoft.com/es-es/languages/csharp"  target="_blank"
+                                        data-bs-toggle="popover" data-bs-placement="top"
+                                        data-bs-trigger="hover focus"
+                                        data-bs-custom-class="PopRed"
+                                        data-bs-title="C#"
+                                        data-bs-content="Desarrollo web back-end"><img src="IMG/9.png" alt="" class="img-skill"></a></li>
+                                    <li class="item-skill"><a href="https://dotnet.microsoft.com/es-es/apps/aspnet/web-apps/blazor"  target="_blank"
+                                        data-bs-toggle="popover" data-bs-placement="top"
+                                        data-bs-trigger="hover focus"
+                                        data-bs-custom-class="PopRed"
+                                        data-bs-title="Blazor .net"
+                                        data-bs-content="Desarrollo web full-stack"><img src="IMG/10.png" alt="" class="img-skill"></a></li>
+                                    <li class="item-skill"><a href="https://www.microsoft.com/en-us/sql-server/sql-server-2022"  target="_blank"
+                                        data-bs-toggle="popover" data-bs-placement="top"
+                                        data-bs-trigger="hover focus"
+                                        data-bs-custom-class="PopRed"
+                                        data-bs-title="SQL Server"
+                                        data-bs-content="Desarrollo web back-end"><img src="IMG/11.png" alt="" class="img-skill"></a></li>
+                                    <li class="item-skill"><a href="https://asana.com/es"  target="_blank"
+                                        data-bs-toggle="popover" data-bs-placement="top"
+                                        data-bs-trigger="hover focus"
+                                        data-bs-custom-class="PopGreen"
+                                        data-bs-title="Asana"
+                                        data-bs-content="Planificación de proyectos"><img src="IMG/12.png" alt="" class="img-skill"></a></li>
+                                    <li class="item-skill"><a href="https://github.com/"  target="_blank"
+                                        data-bs-toggle="popover" data-bs-placement="top"
+                                        data-bs-trigger="hover focus"
+                                        data-bs-custom-class="PopRed"
+                                        data-bs-title="GitHub"
+                                        data-bs-content="Desarrollo web - Control de versiones"><img src="IMG/13.png" alt="" class="img-skill"></a></li>
+                            </ul>
+                        </div>
+                        <!--Contenedor Etiquetas-->
+                        <div class="col-12 h-50 d-flex">
+                            <ul class="lista-categoria-tec col-12 d-flex justify-content-center mt-5 mt-lg-2 p-0">
+                                <li class="item-categoria-tec px-3 d-flex align-items-center justify-content-center"><div class="circulo-categoria bg-warning me-3  rounded-circle"></div><small>Diseño</small></li>
+                                <li class="item-categoria-tec px-3 d-flex align-items-center justify-content-center"><div class="circulo-categoria bg-success me-3  rounded-circle"></div><small>Multimedia</small></li>
+                                <li class="item-categoria-tec px-3 d-flex align-items-center justify-content-center"><div class="circulo-categoria bg-danger  me-3 rounded-circle"></div><small>Desarrollo</small></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!--Sección proyectos-->
+                <section class="seccion seccion-proyectos" id="proyectos">
+                    <h2 class="text-center fw-bold">Proyectos</h2>
+                    <hr class="col-2 offset-5">
+                    <small class="text-center d-block">¡ Explora algunos de mis desarrollos !</small>
+
+                    
+                    <div class="row">
+                        <div class="box col-12">
+                            <div id="contenedor-input-categorias" class="mt-5">
+                                <input type="radio" name="categoria-proyecto" id="todos" checked>
+                                <label for="todos">Todos</label>
+                            
+                                <input type="radio" name="categoria-proyecto" id="front-end">
+                                <label for="front-end">Front-end</label> <!-- Cambiado a "for="front-end" -->
+                            
+                                <input type="radio" name="categoria-proyecto" id="back-end">
+                                <label for="back-end">Back-end</label> <!-- Cambiado a "for="back-end" -->
+                            
+                                <ul class="mansory mt-5 col-12 px-0" id="mansory">
+                                    <li class="item-mansory p-3 back-end">
+                                        <article>
+                                            <div class="box-img-mansory">
+                                                <img src="IMG/Sistema-Ventas-Blazor.jpg" alt="" class="img-proyecto" loading="lazy">
+                                            </div>
+                                            <h2 class="titulo-proyecto mt-3">Sistema de ventas</h2>
+                                            
+                                            <p class="texto-proyecto">Proyecto Blazor en desarrollo de un sistema de ventas con administación de roles de usuario, registros de ventas e historial de facturas. Alimentación de graficás en tiempo real con la información interna.</p>
+                                            <div class="d-flex justify-content-end">
+                                                <a class="py-1 px-2 border-0 rounded-2 btn-github text-light"  href="#">Ver GitHub</a>
+                                                <button class="py-1 px-2 border-0 rounded-2 ms-2 btn-icon"><i class="bi bi-eye"></i></button>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="item-mansory p-3 front-end">
+                                        <article>
+                                            <div class="box-img-mansory">
+                                                <img src="IMG/Ventana-portafolio.jpg" alt="" class="img-proyecto" loading="lazy">
+                                            </div>
+                                            <h2 class="titulo-proyecto mt-3">Plantilla portafolio web</h2>
+                                            
+                                            <p class="texto-proyecto">Plantilla para la ventana inicial de un portafolio web, integrando la herramienta de lottie-files para uso de animaciónes.</p>
+                                            <div class="d-flex justify-content-end">
+                                                <a class="py-1 px-2 border-0 rounded-2 btn-github text-light" href="#">Ver GitHub</a>
+                                                <button class="py-1 px-2 border-0 rounded-2 ms-2 btn-icon"><i class="bi bi-eye"></i></button>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="item-mansory p-3 back-end">
+                                        <article>
+                                            <div class="box-img-mansory">
+                                                <img src="IMG/Sistema-Bibliotecario.jpg" alt="" class="img-proyecto" loading="lazy">
+                                            </div>
+                                            <h2 class="titulo-proyecto mt-3">Sistema bibliotecario</h2>
+                                            
+                                            <p class="texto-proyecto">Proyecto en WindosForm que simula el registro de libros dentro de una biblioteca, utilizando la serialización y deserialización de un archivo JSON como origen de datos. </p>
+                                            <div class="d-flex justify-content-end">
+                                                <a class="py-1 px-2 border-0 rounded-2 btn-github text-light" href="https://github.com/ferdyamc/Sistema-de-registro-bibliotecario" target="_blank">Ver GitHub</a>      
+                                                <button class="py-1 px-2 border-0 rounded-2 ms-2 btn-icon"><i class="bi bi-eye"></i></button>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <!--<li class="item-mansory p-3 front-end">
+                                        <article>
+                                            <div class="box-img-mansory">
+                                                <img src="IMG/brava-demo.jpg" alt="" class="img-proyecto" loading="lazy">
+                                            </div>
+                                            <h2 class="titulo-proyecto mt-3">Actualización de login</h2>
+                                            
+                                            <p class="texto-proyecto">Proyecto para actualización del front-end de plataforma web brava.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, fugit. Non enim voluptate commodi illo!</p>
+                                            <div class="d-flex justify-content-end">
+                                                <a class="py-1 px-2 border-0 rounded-2 btn-github text-light" href="https://github.com/ferdyamc/Brava_demo" target="_blank">Ver GitHub</a> 
+                                                <button class="py-1 px-2 border-0 rounded-2 ms-2 btn-icon"><i class="bi bi-eye"></i></button>
+                                            </div>
+                                        </article>
+                                    </li>-->
+                                    <li class="item-mansory p-3 back-end">
+                                        <article>
+                                            <div class="box-img-mansory">
+                                                <img src="IMG/ChatGPT.jpg" alt="" class="img-proyecto" loading="lazy">
+                                            </div>
+                                            <h2 class="titulo-proyecto mt-3">Integración de ChatGpt</h2>
+                                            
+                                            <p class="texto-proyecto">Integración en Blazor Server Side de la inteligencia artificial ChatGPT con la Api de OpenAI.</p>
+                                            <div class="d-flex justify-content-end">
+                                                <a class="py-1 px-2 border-0 rounded-2 btn-github text-light" href="#">Ver GitHub</a>
+                                                <button class="py-1 px-2 border-0 rounded-2 ms-2 btn-icon"><i class="bi bi-eye"></i></button>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="item-mansory p-3 back-end">
+                                        <article>
+                                            <div class="box-img-mansory">
+                                                <img src="IMG/Estructuras-de-datos.jpg" alt="" class="img-proyecto" loading="lazy">
+                                            </div>
+                                            <h2 class="titulo-proyecto mt-3">Estructuras de datos</h2>
+                                            
+                                            <p class="texto-proyecto">Ejercicio en WindowsForm que muestra el funcionamiento de las estructuras de datos (pilas, listas y colas).</p>
+                                            <div class="d-flex justify-content-end">
+                                                <a class="py-1 px-2 border-0 rounded-2 btn-github text-light" href="https://github.com/ferdyamc/Estructuras-de-datos" target="_blank">Ver GitHub</a>
+                                                <button class="py-1 px-2 border-0 rounded-2 ms-2 btn-icon"><i class="bi bi-eye"></i></button>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li class="item-mansory p-3 back-end">
+                                        <article>
+                                            <div class="box-img-mansory">
+                                                <img src="IMG/Punto-de-venta.jpg" alt="" class="img-proyecto" loading="lazy">
+                                            </div>
+                                            <h2 class="titulo-proyecto mt-3">Punto de venta WPF</h2>
+                                            
+                                            <p class="texto-proyecto">Proyecto WPF de un punto de ventas basico con el patron de arquitectura N-capas. Lorem ipsum dolor sit amet, asda ifdi dasdadghh gdasfghf asdasd asdasd adsas jkagdashg consectetur adipisicing elit. Voluptates, fugit. Non enim voluptate commodi illo!</p>
+                                            <div class="d-flex justify-content-end">
+                                                <a class="py-1 px-2 border-0 rounded-2 btn-github text-light" href="https://github.com/ferdyamc/Punto-de-ventas---N-capas" target="_blank">Ver GitHub</a>
+                                                <button class="py-1 px-2 border-0 rounded-2 ms-2 btn-icon"><i class="bi bi-eye"></i></button>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <!--<li class="item-mansory p-3 back-end">
+                                        <article>
+                                            <div class="box-img-mansory">
+                                                <img src="IMG/Modulo-Admin.jpg" alt="" class="img-proyecto" loading="lazy">
+                                            </div>
+                                            <h2 class="titulo-proyecto mt-3">Modulo admin</h2>
+                                            
+                                            <p class="texto-proyecto">Actualización del módulo administrativo en "MVC .NET" para la plataforma AVARMS.</p>
+                                            <div class="d-flex justify-content-end">
+                                                <a class="py-1 px-2 border-0 rounded-2 btn-github text-light" href="https://github.com/ferdyamc/ModuloAdmin" target="_blank">Ver GitHub</a>
+                                                <button class="py-1 px-2 border-0 rounded-2 ms-2 btn-icon"><i class="bi bi-eye"></i></button>
+                                            </div>
+                                        </article>
+                                    </li>-->                          
+                                    <li class="item-mansory p-3 front-end">
+                                        <article>
+                                            <div class="box-img-mansory">
+                                                <img src="IMG/SIGMA.jpg" alt="" class="img-proyecto" loading="lazy">
+                                            </div>
+                                            <h2 class="titulo-proyecto mt-3">Login-Home SIGMA</h2>
+                                            
+                                            <p class="texto-proyecto">Login y Home - Proyecto trabajado para la agencia nacional minera de antioquia (Gobernación de antioquia)</p>
+                                            <div class="d-flex justify-content-end">
+                                                <a class="py-1 px-2 border-0 rounded-2 btn-github text-light" href="https://github.com/ferdyamc/Template-frontend-Sigma" target="_blank">Ver GitHub</a>
+                                                <button class="py-1 px-2 border-0 rounded-2 ms-2 btn-icon"><i class="bi bi-eye"></i></button>
+                                            </div>
+                                        </article>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--Sección experiecia-->
+                <section class="seccion seccion-experiencia" id="experiencia">
+                    <h2 class="text-center fw-bold pos-ref">Experiencia</h2>
+                    <hr class="col-2 offset-5">
+                    <small class="text-center d-block">¡ Conoce los campos laborales en mi experiencia !</small>
+                    <div class="row">
+                        <div class="col-12 my-5 contenedor-lista-experiencia px-0">
+                            <ul class="lista-experiencia m-0 p-0">
+                                <li class="item-experiencia px-3 px-lg-5">
+                                    <div class="p-3 contenedor-textos-experiencia" data-aos="fade-left">                                
+                                        <h2>Diseño</h2>
+                                        <p>Conocimientos y experiencia en desarrollo web. Proyectos desafiantes, diseño y desarrollo de sitios interactivos. Lenguajes: HTML, CSS, JavaScript. Frameworks: Bootstrap y demás. Colaboración con equipos UX/UI. Pasión por el desarrollo web.</p>
+                                    </div>
+                                    <div class="point-experencia point-right text-center"><i class="bi bi-vector-pen text-light"></i></div>
+                                </li>
+                                <li class="item-experiencia  px-3 px-lg-5">
+                                    <div class="p-3 contenedor-textos-experiencia" data-aos="fade-right">    
+                                        <h2>Multimedia</h2>
+                                        <p>Experiencia en diseño de interfaces, logotipos, folletos, infografías y diseños web. Uso de Photoshop, Illustrator y XD. Colaboración con equipos de desarrollo. Pasión por el diseño y atención al detalle para soluciones visuales impactantes y atractivas.</p>
+                                    </div>
+                                    <div class="point-experencia point-left text-center"><i class="bi bi-person-video2 text-light"></i></div>
+                                </li>
+                                <li class="item-experiencia  px-3 px-lg-5">
+                                    <div class="p-3 contenedor-textos-experiencia" data-aos="fade-left">    
+                                        <h2>Desarrollo</h2>
+                                        <p>Experiencia en multimedia. Proyectos variados: videos, animaciones, presentaciones. Software: Premiere, After Effects, FL Studio. Colaboración con equipos creativos y técnicos. Pasión por contenido multimedia cautivador e innovador.</p>
+                                    </div>
+                                    <div class="point-experencia point-right text-center"><i class="bi bi-code-slash text-light"></i></div>
+                                </li>
+                            </ul> 
+                            <div class="time-line-bar animacion-barra-y">
+                            </div>                      
+                        </div>
+                    </div>
+                </section>
+                <!--Sección contactos-->
+                <section class="seccion bg-dark" id="contactos">
+                    <h2 class="text-center fw-bold text-light item-exp-ref ">Contactos</h2>
+                    <hr class="col-2 offset-5 text-light">
+                    <small class="text-center d-block text-light">¡ No dudes en comunicarme.  Estare atento!</small>
+                    <div class="row h-auto flex-md-row flex-column-reverse">
+                        <div class="col">
+                            <form id="form" class="mt-5" action="https://formspree.io/f/mwkdqkke" method="post">
+                                <h3 class="text-light">Enviar mensaje</h3>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingInputText" placeholder="Nombre" name="Nombre" required autocomplete="off">
+                                    <label for="floatingInputText">Nombre</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com" name="E-mail" required autocomplete="off" >
+                                    <label for="floatingInputEmail">Email</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" placeholder="Mensaje" id="floatingTextarea2" style="height: 100px" name="Mensaje" required autocomplete="off"></textarea>
+                                    <label for="floatingTextarea2">Mensaje</label>
+                                </div>
+                                <div class="form-group">
+                                    <button class="col-12 btn btn-outline-primary mb-5" type="submit">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col d-flex flex-row justify-content-center">               
+                            <dotlottie-player src="https://lottie.host/d4103580-f691-4d9d-af0a-1f3043eb6e5f/gt2NzFVBLW.json" background="transparent" speed="1" style="width: 80%;" direction="1" mode="normal" loop autoplay></dotlottie-player>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!--Footer-->  
+            <footer class="col-12 text-secondary">
+                <div class=" col-12 p-4 text-center">
+                    <p class="m-0">Desarrollado por Ferdy Andrés Marulanda Carvajal</p>
+                    <p class="m-0 p-0">© Todos los derechos reservados</p>
+                </div>
+                
+            </footer>
+            <!--Modal-->
+            <div id="contenedor-modal" class="col-12 position-fixed">
+                            <div id="modal-g" class="bg-light ">
+                                <p class="btn_cerrar_modal col-12 text-end pe-4"> x</p> 
+                                <img src="none" alt="" class="img-modal">
+                                <hr class="col-10 mb-0">
+                                <hr>
+                            </div>
+            </div>
+
+            <!--Ancla para descargarel .PDF "Hoja de vida"-->
+            <a href="PDF/a.pdf" class="position-fixed rounded-2 text-center btn-hojavida" download="">Descargar<br>hoja de vida</a>            
+        </div>
+        <script src="JS/header-scroll.js" id="contacto"></script><!--Animacion del header al hacer scroll-->
+        <script src="JS/popover.js"></script><!--Activar animación en Popovers-->
+        <script src="JS/modal.js"></script><!--Animación del Modal-->
+        <script src="JS/intersection-object.js"></script><!--Interctar elementos de la sección "experiencia" al entrar en pantalla-->
+        <script src="Js/enviar-mail.js"></script><!--Enviar Email con la Api "Formspree" y mostrar mensaje con "SweetAlert"-->
+        <script src="Js/aos.js"></script><!--Iniciar ejecución de "AOS"-->
+    </body>
+</html>
