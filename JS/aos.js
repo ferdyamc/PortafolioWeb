@@ -1,1 +1,5 @@
-AOS.init();
+window.onload=inicio;
+
+function inicio(){
+  AOS.init();
+}
