@@ -109,6 +109,8 @@
     background: #00c669;
     transform: scale(1);
     animation-name: circuloDisponibilidad;
+    transform-origin: center;
+    
 
 }
 @keyframes circuloDisponibilidad{
@@ -128,8 +130,7 @@
     background:  #48fea3;
     border-radius: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
+
     animation-name: circuloDisponibilidad;
     animation-duration: 1s;
     animation-iteration-count: infinite; 
@@ -483,11 +484,11 @@ h2{
 #background-carta{
     width: 100vw;
     height: 100%;
-    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, .4) 0%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0,1) 75%, rgba(0, 0, 0, .4) 100%);
     position: absolute;
     background-color: rgba(167, 81, 243, 0.8);
     top: 0;    
-    transition: .5s ease-in-out;
+    transition: .140s ease-in-out;
     opacity: 0;
     display: none;
     z-index: 10;
@@ -495,10 +496,12 @@ h2{
 
 .carta-perfil{
     width: 60%;
+    min-width: 350px;
     min-height: 500px;
     position: absolute;
     top: 60px;
-    margin-left: 20%;
+    left: 50%;
+    transform: translateX(-50%);
     box-shadow: #0000002e 0px 5px 10px 5px;
     background: linear-gradient(rgba(85, 33, 196, 0.95), rgba(253, 194, 254, 0.95));
     display: none;
@@ -512,6 +515,3 @@ h2{
     align-items: center;
 }
 
-.carta-box div{
-    max-width: max-content;
-}
