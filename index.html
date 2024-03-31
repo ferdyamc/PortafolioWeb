@@ -19,6 +19,7 @@
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script><!--CDN "SweetAlert2"-->
         <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script><!--CDN "LottieFiles"-->
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> <!--CDN JQuery-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!--Animate css-->
     </head>
     <body>
         <div class="container-fluid p-0">
@@ -45,14 +46,20 @@
                     <div class="row seccion-inicio" style="height: 70%;">
                         <div class="col-12 d-flex flex-md-row flex-column-reverse px-0">
                             <!--Contenedor Textos-->
-                            <div class="col-12 col-md-6 col-lg-8 h-auto d-flex flex-column justify-content-md-center p-0 text-light text-center text-md-start align-items-center align-items-md-start">
-                                <h1 class="fw-bold mt-5 mt-md-0">Ferdy Andrés Marulanda Carvajal</h1>
-                                <small class="d-block descripcion fw-semibold">Desarrollador y diseñador web, Medellin Co.</small>
-                                <p class="my-4 parrafo">Soy un Tecnólogo en Diseño y Desarrollo Web apasionado por los retos<br>
-                                    y la busqueda de nuevos conocimientos. Me considero una persona<br>
-                                    creativa, curiosa y siempre en busca de soluciones innovadoras.
+                            <div class="col-12 col-md-6 col-lg-8 h-auto d-flex flex-column justify-content-md-center p-0 text-light text-center text-md-start align-items-center align-items-md-start" id="box-sobremi">
+                                <h1 class="fw-bold mt-5 mt-md-0 animate__animated animate__fadeInDown">Ferdy Andrés Marulanda Carvajal</h1>
+                                <small class="d-block descripcion fw-semibold animate__animated animate__flipInX">Desarrollador y diseñador web, Medellin Co.</small>
+                                <p class="my-4 parrafo animate__animated animate__fadeIn" id="parrafo-sobremi ">Soy un diseñador y desarrollador Web apasionado por los retos<br>
+                                    y la busqueda de nuevos conocimientos. Me considero creativo<br>
+                                    , curioso y siempre estoy en busca de soluciones innovadoras.
+                                    <!--<br />
+                                    <br />
+                                    En mi experiencia laboral, he tenido la oportunidad de trabajar en proyectos
+                                    desafiantes y diversos, lo que me ha permitido desarrollar habilidades en diferentes
+                                    áreas de diseño y desarrollo web. Me gusta trabajar en equipo y colaborar con otros
+                                    profesionales para lograr los mejores resultados.-->
                                 </p>
-                                <button class="btn-purple my-3 my-md-0">Leer más</button>
+                                <button class="btn-purple my-3 my-md-0 text-center animate__animated animate__flipInX" id="btn-parrafo-sobremi">Leer más</button>
                             </div>
                             <!--Contenedor IMG-->
                             <div class="col-12 col-md-6 col-lg-4 h-auto d-flex justify-content-center justify-content-md-end align-items-center p-0">
@@ -244,7 +251,7 @@
                     <h2 class="text-center fw-bold">Proyectos</h2>
                     <hr class="col-2 offset-5">
                     <small class="text-center d-block">¡ Explora algunos de mis desarrollos !</small>
-
+                
                     
                     <div class="row">
                         <div class="box col-12">
@@ -259,35 +266,35 @@
                                 <label for="back-end">Back-end</label> <!-- Cambiado a "for="back-end" -->
                             
                                 <ul class="mansory mt-5 col-12 px-0" id="mansory">
-                                    <li class="item-mansory p-3 back-end">
+                                    <li class="item-mansory p-2 back-end">
                                         <article>
                                             <div class="box-img-mansory">
                                                 <img src="IMG/Sistema-Ventas-Blazor.jpg" alt="" class="img-proyecto" loading="lazy">
                                             </div>
                                             <h2 class="titulo-proyecto mt-3">Sistema de ventas</h2>
                                             
-                                            <p class="texto-proyecto">Proyecto Blazor en desarrollo de un sistema de ventas con administación de roles de usuario, registros de ventas e historial de facturas. Alimentación de graficás en tiempo real con la información interna.</p>
+                                            <p class="texto-proyecto">Proyecto Blazor en desarrollo de un sistema de ventas con administación de roles de usuario, registros de ventas e historial de facturas y graficás en tiempo real.</p>
                                             <div class="d-flex justify-content-end">
                                                 <a class="py-1 px-2 border-0 rounded-2 btn-github text-light"  href="#">Ver GitHub</a>
                                                 <button class="py-1 px-2 border-0 rounded-2 ms-2 btn-icon"><i class="bi bi-eye"></i></button>
                                             </div>
                                         </article>
                                     </li>
-                                    <li class="item-mansory p-3 front-end">
+                                    <li class="item-mansory p-2 front-end">
                                         <article>
                                             <div class="box-img-mansory">
                                                 <img src="IMG/Ventana-portafolio.jpg" alt="" class="img-proyecto" loading="lazy">
                                             </div>
                                             <h2 class="titulo-proyecto mt-3">Plantilla portafolio web</h2>
                                             
-                                            <p class="texto-proyecto">Plantilla para la ventana inicial de un portafolio web, integrando la herramienta de lottie-files para uso de animaciónes.</p>
+                                            <p class="texto-proyecto">Plantilla para la ventana inicial de un portafolio web, integrando la herramienta de lottie-files.</p>
                                             <div class="d-flex justify-content-end">
                                                 <a class="py-1 px-2 border-0 rounded-2 btn-github text-light" href="#">Ver GitHub</a>
                                                 <button class="py-1 px-2 border-0 rounded-2 ms-2 btn-icon"><i class="bi bi-eye"></i></button>
                                             </div>
                                         </article>
                                     </li>
-                                    <li class="item-mansory p-3 back-end">
+                                    <li class="item-mansory p-2 back-end">
                                         <article>
                                             <div class="box-img-mansory">
                                                 <img src="IMG/Sistema-Bibliotecario.jpg" alt="" class="img-proyecto" loading="lazy">
@@ -315,42 +322,29 @@
                                             </div>
                                         </article>
                                     </li>-->
-                                    <li class="item-mansory p-3 back-end">
+                                    <li class="item-mansory p-2 back-end">
                                         <article>
                                             <div class="box-img-mansory">
                                                 <img src="IMG/ChatGPT.jpg" alt="" class="img-proyecto" loading="lazy">
                                             </div>
                                             <h2 class="titulo-proyecto mt-3">Integración de ChatGpt</h2>
                                             
-                                            <p class="texto-proyecto">Integración en Blazor Server Side de la inteligencia artificial ChatGPT con la Api de OpenAI.</p>
+                                            <p class="texto-proyecto">Integración en Blazor Server Side de la inteligencia artificial ChatGPT con la Api de OpenAI. El ejercicio permite consultar un top 5 de riesgos asociados a un proceso indicado a través de una entrada de texto. </p>
                                             <div class="d-flex justify-content-end">
                                                 <a class="py-1 px-2 border-0 rounded-2 btn-github text-light" href="#">Ver GitHub</a>
                                                 <button class="py-1 px-2 border-0 rounded-2 ms-2 btn-icon"><i class="bi bi-eye"></i></button>
                                             </div>
                                         </article>
                                     </li>
-                                    <li class="item-mansory p-3 back-end">
-                                        <article>
-                                            <div class="box-img-mansory">
-                                                <img src="IMG/Estructuras-de-datos.jpg" alt="" class="img-proyecto" loading="lazy">
-                                            </div>
-                                            <h2 class="titulo-proyecto mt-3">Estructuras de datos</h2>
-                                            
-                                            <p class="texto-proyecto">Ejercicio en WindowsForm que muestra el funcionamiento de las estructuras de datos (pilas, listas y colas).</p>
-                                            <div class="d-flex justify-content-end">
-                                                <a class="py-1 px-2 border-0 rounded-2 btn-github text-light" href="https://github.com/ferdyamc/Estructuras-de-datos" target="_blank">Ver GitHub</a>
-                                                <button class="py-1 px-2 border-0 rounded-2 ms-2 btn-icon"><i class="bi bi-eye"></i></button>
-                                            </div>
-                                        </article>
-                                    </li>
-                                    <li class="item-mansory p-3 back-end">
+                
+                                    <li class="item-mansory p-2 back-end">
                                         <article>
                                             <div class="box-img-mansory">
                                                 <img src="IMG/Punto-de-venta.jpg" alt="" class="img-proyecto" loading="lazy">
                                             </div>
                                             <h2 class="titulo-proyecto mt-3">Punto de venta WPF</h2>
                                             
-                                            <p class="texto-proyecto">Proyecto WPF de un punto de ventas basico con el patron de arquitectura N-capas. Lorem ipsum dolor sit amet, asda ifdi dasdadghh gdasfghf asdasd asdasd adsas jkagdashg consectetur adipisicing elit. Voluptates, fugit. Non enim voluptate commodi illo!</p>
+                                            <p class="texto-proyecto">Proyecto WPF de un punto de ventas basico con el patron de arquitectura N-capas. Secciones: productos, empleados, ventas y dashboard.</p>
                                             <div class="d-flex justify-content-end">
                                                 <a class="py-1 px-2 border-0 rounded-2 btn-github text-light" href="https://github.com/ferdyamc/Punto-de-ventas---N-capas" target="_blank">Ver GitHub</a>
                                                 <button class="py-1 px-2 border-0 rounded-2 ms-2 btn-icon"><i class="bi bi-eye"></i></button>
@@ -371,7 +365,7 @@
                                             </div>
                                         </article>
                                     </li>-->                          
-                                    <li class="item-mansory p-3 front-end">
+                                    <li class="item-mansory p-2 front-end">
                                         <article>
                                             <div class="box-img-mansory">
                                                 <img src="IMG/SIGMA.jpg" alt="" class="img-proyecto" loading="lazy">
@@ -456,38 +450,80 @@
                         </div>
                     </div>
                 </section>
+
+                
             </main>
+
             <!--Footer-->  
             <footer class="col-12 text-secondary">
                 <div class=" col-12 p-4 text-center">
                     <p class="m-0">Desarrollado por Ferdy Andrés Marulanda Carvajal</p>
                     <p class="m-0 p-0">© Todos los derechos reservados</p>
-                </div>
-                
+                </div>             
             </footer>
+
             <!--Modal-->
             <div id="contenedor-modal" class="col-12 position-fixed">
-                            <div id="modal-g" class="bg-light ">
-                                <p class="btn_cerrar_modal col-12 text-end pe-4"> x</p> 
-                                <img src="none" alt="" class="img-modal">
-                                <hr class="col-10 mb-0">
-                                <hr>
-                            </div>
+                <div id="modal-g" class="bg-light ">
+                    <p class="btn_cerrar_modal col-12 text-end pe-4"> x</p> 
+                    <img src="none" alt="" class="img-modal">
+                    <hr class="col-10 mb-0">
+                    <hr>
+                </div>
             </div>
 
             <!--Ancla para descargarel .PDF "Hoja de vida"-->
-            <a href="PDF/HojaDeVida.pdf" class="position-fixed rounded-2 text-center btn-hojavida" download="">Descargar<br>hoja de vida</a>            
+            <a href="PDF/HojaDeVida.pdf" class="position-fixed rounded-2 text-center btn-hojavida" download="">Descargar<br>hoja de vida</a>
+
+
+            <div class="" id="background-carta"></div>
+
+            <!--carta-->
+            <div class="carta-perfil rounded-3" id="carta">
+                <div class="col-12 d-flex rounded-3 carta-box" >  
+                    <div class="col-md-12 col-lg-4 h-auto rounded-3" >
+                        <div class="position-relative mt-5 mx-3">
+                            <img src="IMG/pp.png" alt="Perfil" id="img-perfil" class=" animate__animated animate__slideInDown">
+                            <div class="position-absolute imagen-label d-flex align-items-center px-3 animate__animated  animate__flipInX animate__delay-1s">
+                                <div class="rounded-circle circulo-disponibilidad position-relative " style="height: 15px;width: 15px;"></div>
+                                <p class="text-secondary m-0 ms-3 ">Disponible</p>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="col-sm-12 col-lg-8  h-100 rounded-3 pt-5 px-5 px-lg-3">
+                        <h1 class="fw-bold mt-5 mt-md-0 text-light animate__animated animate__flipInX">Ferdy Andrés Marulanda Carvajal</h1>
+                        <small class="d-block descripcion fw-semibold animate__animated animate__slideInDown">Desarrollador y diseñador web, Medellin Co.</small>
+                        <p class="my-4 parrafo text-light animate__animated animate__fadeIn" id="">Soy un diseñador y desarrollador Web apasionado por los retos<br>
+                            y la busqueda de nuevos conocimientos. Me considero creativo<br>
+                            , curioso y siempre estoy en busca de soluciones innovadoras.
+                            <br />
+                            <br />
+                            En mi experiencia laboral, he tenido la oportunidad de trabajar en proyectos
+                            desafiantes y diversos, lo que me ha permitido desarrollar habilidades en diferentes
+                            áreas de diseño y desarrollo web. Me gusta trabajar en equipo y colaborar con otros
+                            profesionales para lograr los mejores resultados.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        
+
+        <script src="js/carta-perfil.js"></script>
         <script src="JS/modal.js"></script>
         <script src="JS/intersection-object.js"></script>
         <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
         <script src="JS/header-scroll.js" id="contacto"></script>
         <script src="JS/popover.js"></script>
         
+        <!--Inicializar api AOS (Para efectos en la sección "expericia")-->
         <script>
             AOS.init();
-          </script>
-          <script>
+        </script>
+
+        <!--Envio de mail en la sección "contacto" a través de la-->
+        <script>
             const $form = document.querySelector("#form")
     
             $form.addEventListener('submit',handleSubmit)
@@ -509,11 +545,10 @@
                         text: '¡Listo! Tu correo fue enviado con exito',
                         icon: 'success',
                         confirmButtonText: 'Ok'
-                        })
+                    })       
                 }
-            }
-            
-          </script>
+            }           
+        </script>
         
     </body>
 </html>

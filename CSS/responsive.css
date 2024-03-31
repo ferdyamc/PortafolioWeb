@@ -72,7 +72,16 @@
         left: calc(50% - 2.5px);
 
     }
-    
+    .carta-box{
+        flex-direction: row;
+        align-items: start;
+    }
+    .carta-perfil{
+        height: auto;
+    }
+    #background-carta{
+        height: 100vh;
+    }
  }
 
 /*X-Large devices (large desktops, 1200px and up)*/
