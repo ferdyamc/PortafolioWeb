@@ -84,6 +84,9 @@
     #background-carta{
         height: 100vh;
     }
+    #box-logo{
+        display: block;
+    }
  }
 
 /*X-Large devices (large desktops, 1200px and up)*/
