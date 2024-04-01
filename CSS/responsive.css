@@ -78,6 +78,8 @@
     }
     .carta-perfil{
         height: auto;
+        top: 50vh;
+        transform: translateX(-50%) translateY(-50%);
     }
     #background-carta{
         height: 100vh;

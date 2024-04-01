@@ -499,15 +499,15 @@ h2{
     min-width: 350px;
     min-height: 500px;
     position: absolute;
-    top: 50vh;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
     box-shadow: #0000002e 0px 5px 10px 5px;
     background: linear-gradient(rgba(85, 33, 196, 0.95), rgba(253, 194, 254, 0.95));
     display: none;
     opacity: 0;
     transition: .150s ease-in-out;
     z-index: 12;
+    top: 60px;
+    transform: translateX(-50%) translateY(0%);
 }
 
 .carta-box{
