@@ -12,6 +12,7 @@
     }
     #modal-g{
         transform: rotate(0deg);
+        height: 600px;
     }
     .lista-experiencia .item-experiencia{
         width: 100%;
