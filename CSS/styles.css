@@ -379,7 +379,7 @@ h2{
     align-items: center;
 }
 #modal-g{
-    height: 400px;
+    height: 300px;
     width:  1000px;
     overflow-y: auto;
     border-radius: 7px;
@@ -392,7 +392,7 @@ h2{
     position: relative;
 }
 .img-modal{
-    width: 80%;
+    width: 90%;
   
 }
 .btn_cerrar_modal{
@@ -511,8 +511,8 @@ h2{
     left: 50%;
     box-shadow: #0000002e 0px 5px 10px 5px;
     background: linear-gradient(rgba(85, 33, 196, 0.95), rgba(253, 194, 254, 0.95));
-    display: none;
-    opacity: 0;
+    display: block;
+    opacity: 1;
     transition: .150s ease-in-out;
     z-index: 12;
     top: 60px;
