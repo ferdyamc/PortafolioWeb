@@ -206,17 +206,24 @@ h2{
     background-color: #ffffff;
     border-radius: 2px; 
     -webkit-mask-image: linear-gradient(to bottom,rgb(0, 0, 0) 0%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
-
+    position: relative;
+    overflow: hidden;
 }
 .img-proyecto{
-    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
     height: 100%;
     border-radius: 2px;
     filter: grayscale(50%);
     opacity: .3;
-    transition: .3s ease-in-out;
+   
     outline-offset: -10px;
     outline: #d8d8d8 2px solid;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
 }
 .img-proyecto:hover{
     width: 100%;
