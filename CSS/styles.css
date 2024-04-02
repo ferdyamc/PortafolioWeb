@@ -13,10 +13,11 @@
 /*---------------------------------Header------------------------------*/
 #header-p{
     position: fixed;
-    width: 100%;
+    width: 100vw;
     transition: .3s ease-in-out;
     z-index: 2;
     background:rgb(114,58,235);
+    overflow-x: hidden;
 }
 #box-logo{
     display: none;
