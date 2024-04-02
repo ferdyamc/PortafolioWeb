@@ -29,7 +29,9 @@
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
-
+    .row{
+        padding: 0px 100px;
+    }
     #header-p{
         background:none;
         

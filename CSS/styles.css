@@ -287,7 +287,7 @@ h2{
     background: #7054C0;
     position: absolute;
     top: 0;
-    left: calc(10% - 12px);
+    left: calc(10% - 12.5px);
     border-radius: 7px;
 }
 .animacion-barra-y{
@@ -315,7 +315,7 @@ h2{
     }
 }
 .lista-experiencia{
-    overflow-x: hidden;
+    
 }
 .lista-experiencia .item-experiencia{
     width: 80%;
@@ -370,7 +370,7 @@ h2{
 /*------------------------------Contactos------------------------------*/
 #contenedor-modal{
     height: 100dvh;
-    z-index: 3;
+    z-index: 13;
     -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, 9) 25%, rgba(0, 0, 0,9) 75%, rgba(0, 0, 0, .8) 100%);
     background-color: rgba(25, 24, 24, .9);
     top: 0;
