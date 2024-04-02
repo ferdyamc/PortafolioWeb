@@ -93,7 +93,7 @@
     color:white;
     
 }
-#img-perfil{
+.img-perfil{
     border-radius: 14px;
     width: 100%;
     max-width: 300px;
@@ -314,9 +314,7 @@ h2{
         height: 0%;
     }
 }
-.lista-experiencia{
-    
-}
+
 .lista-experiencia .item-experiencia{
     width: 80%;
     margin-bottom: 50px;
@@ -524,7 +522,7 @@ h2{
     align-items: center;
 }
 
-.carta-box div h1{
+.carta-box div h2{
     text-wrap:balance;
 }
 
