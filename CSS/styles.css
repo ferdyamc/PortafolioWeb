@@ -499,14 +499,15 @@ h2{
 #background-carta{
     width: 100vw;
     height: 100%;
-    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 9) 25%, rgba(0, 0, 0,9) 75%, rgba(0, 0, 0, .5) 100%);
+    /* -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 9) 25%, rgba(0, 0, 0,9) 75%, rgba(0, 0, 0, .5) 100%); */
     position: absolute;
-    background-color: rgba(167, 81, 243, 0.8);
+    background-color: rgba(167, 81, 243, 0.5);
     top: 0;    
     transition: .140s ease-in-out;
-    opacity: 0;
-    display: none;
+    opacity: 1;
+    display: block;
     z-index: 10;
+    backdrop-filter: blur(30px);
 }
 
 .carta-perfil{
@@ -517,12 +518,14 @@ h2{
     left: 50%;
     box-shadow: #0000002e 0px 5px 10px 5px;
     background: linear-gradient(rgba(85, 33, 196, 0.95), rgba(253, 194, 254, 0.95));
-    display: none;
-    opacity: 0;
+    display: block;
+    opacity: 1;
     transition: .150s ease-in-out;
     z-index: 12;
     top: 60px;
     transform: translateX(-50%) translateY(0%);
+    
+    
 }
 
 .carta-box{
