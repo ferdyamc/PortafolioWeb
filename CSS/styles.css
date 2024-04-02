@@ -505,8 +505,8 @@ h2{
     background-color: rgba(167, 81, 243, 0.5);
     top: 0;    
     transition: .140s ease-in-out;
-    opacity: 1;
-    display: block;
+    opacity: 0;
+    display: none;
     z-index: 10;
     backdrop-filter: blur(30px);
 }
@@ -519,8 +519,8 @@ h2{
     left: 50%;
     box-shadow: #0000002e 0px 5px 10px 5px;
     background: linear-gradient(rgba(85, 33, 196, 0.95), rgba(253, 194, 254, 0.95));
-    display: block;
-    opacity: 1;
+    display: none;
+    opacity: 0;
     transition: .150s ease-in-out;
     z-index: 12;
     top: 60px;
