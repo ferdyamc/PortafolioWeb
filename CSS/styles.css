@@ -377,8 +377,9 @@ h2{
 #contenedor-modal{
     height: 100dvh;
     z-index: 13;
-    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, 9) 25%, rgba(0, 0, 0,9) 75%, rgba(0, 0, 0, .8) 100%);
-    background-color: rgba(25, 24, 24, .9);
+    /* -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, 9) 25%, rgba(0, 0, 0,9) 75%, rgba(0, 0, 0, .8) 100%); */
+    background-color: rgba(25, 24, 24, .5);
+    backdrop-filter: blur(30px);
     top: 0;
     display: flex;
     justify-content: center;
