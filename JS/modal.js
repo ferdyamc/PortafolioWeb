@@ -18,15 +18,9 @@ var index_button = btn_ver_imagen.index(this);
 
 /*Evento de click sobre el botono cerrar imagen (Cierra modal)*/
 btn_cerrar_modal.click(function() {            
-    cerrar_modal();            
+    box_modal.fadeOut(100);
+    document.body.style.overflow = "auto";            
 });
 
+    
 
-box_modal.click(function(){
-    cerrar_modal();  
-})
-
-function cerrar_modal(){
-    box_modal.fadeOut(100);
-    document.body.style.overflow = "auto";
-}
